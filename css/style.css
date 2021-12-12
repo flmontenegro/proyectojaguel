@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.encabezado {
+  border: solid 1px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  background: rgb(175, 141, 77);
+  background: linear-gradient(
+    0deg,
+    rgba(175, 141, 77, 1) 0%,
+    rgba(228, 202, 152, 0.9948179955575981) 59%
+  );
+  grid-area: encabezado
+}
+.menu {
+  position: relative;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 180px;
+  height: auto;
+}
+
+.menu li {
+  display: inline;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-family: "Cinzel", serif;
+  padding: 0.625rem;
+}
+
+.menu a:hover {
+  background-color: black;
+  color: white;
+}
+.fondo {
+  width: 100%;
+  height: 91vh;
+  background-image: url(../img/campos.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  grid-area: fondo
+}
+.fondo div {
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.fondo h1 {
+  color: #050402;
+  font-size: 4.375rem;
+  font-family: "DM Serif Display", serif;
+}
+
+.caja {
+  position: relative;
+  top: 45%;
+}
+
+.button {
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fdd17a;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+  font-family: "DM Serif Display", serif;
+}
+
+.button:hover {
+  background-color: #b6a714;
+}
+
+
+.nosotros img {
+  width: 500px;
+  height: auto;
+  margin: 30px;
+}
+.pnosotros {
+  text-align: justify;
+  margin: 80px;
+}
+.nuestraHistoria {
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Kaushan Script", cursive;
+}
+
+.pnosotros h4 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 25px;
+  text-align: end;
+  padding-top: 100px;
+}
+.nuestraCasa {
+  font-size: 1.875em;
+  text-align: center;
+  background-color: #e4ca98;
+  color: #130e05;
+  font-family: "Kaushan Script", cursive;
+  margin: 30px;
+  grid-area: nuestraCasa
+}
+.boxUbicacion{
+  text-align: center;
+}
+.ubicacion {
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+  text-align: center;
+  background-color: #e4ca98;
+  grid-area: ubicacion
+}
+.mapa{
+  padding: 50px;
+}
+
+.contacto {
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+  grid-area: contacto;
+}
+.sectionContacto {
+  grid-area: section;
+  text-align: center;
+}
+.redes {
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+.footer {
+  background: rgb(175, 141, 77);
+  background: linear-gradient(
+    0deg,
+    rgba(175, 141, 77, 1) 0%,
+    rgba(228, 202, 152, 0.9948179955575981) 59%
+  );
+  grid-area: footer
+}
+.redesLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redesLogo img {
+  height: 5%;
+  width: 5%;
+  margin: 10px;
+}
+.derechos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.derechos p {
+  font-family: "Kaushan Script", cursive;
+}
+/* orden de las paginas html y responsive*/
+/* index.html */
+
+/*nosotros*/ 
+.gridNosotros {
+  display: grid;
+  grid-template-columns:40% 50% 50%;
+  grid-template-areas: "encabezado encabezado encabezado" "nosotros nosotros nosotros" "footer footer footer";
+}
+
+/*galeria*/
+.galeria {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 10px;
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+  color: #e0b67d;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-area: fotos
+}
+.grid-item img {
+  height: 80%;
+  width: 70%;
+  border-radius: 20%;
+}
+/*INDEX MEDIA*/
+@media only screen and (max-width: 600px) {
+  .encabezado a {
+    font-size: 0.5em;
+  }
+  .encabezado img{
+    height: 30px;
+  }
+  .fondo h1{
+    font-size: 3.0rem;
+  }
+  .galeria {
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgnosotros img{
+    height: 400px;
+    width: 300px;
+  }
+  .nuestraHistoria{
+    margin-bottom: 20px;
+  }
+  .pnosotros {
+    margin: 0px;
+  }
+  .pnosotros p{
+    padding: 20px;
+  }
+  .pnosotros h4{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .ubicacion h2{
+    font-size: 50px;
+  }
+  .mapa{
+    display: flex;
+    justify-content: center;
+  }
+  .nuestraCasa h1 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 1295px) {
+  .nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
