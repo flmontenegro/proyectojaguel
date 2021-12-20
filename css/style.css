@@ -10,60 +10,55 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-.encabezado {
-  border: solid 1px;
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  background: rgb(175, 141, 77);
-  background: linear-gradient(
-    0deg,
-    rgba(175, 141, 77, 1) 0%,
-    rgba(228, 202, 152, 0.9948179955575981) 59%
-  );
-  grid-area: encabezado
+/*menu*/
+.logoMargin {
+  margin-left: 6.25rem;
 }
+.navbar{
+  background-color: #efe4d2;
+}
+.logo {
+  height: 3.75rem;
+}
+
 .menu {
-  position: relative;
-  height: 5rem;
-  display: flex;
-  align-items: center;
+  margin: auto;
 }
-.logo img {
-  width: 180px;
-  height: auto;
-}
-
-.menu li {
-  display: inline;
-  list-style: none;
-}
-
 .menu a {
-  text-decoration: none;
   color: black;
   font-size: 1.25rem;
   font-family: "Cinzel", serif;
-  padding: 0.625rem;
+  padding: 0.7rem;
 }
-
-.menu a:hover {
-  background-color: black;
-  color: white;
+.desplegable {
+  text-align: center;
+}
+/*centro index*/
+.grid {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/atardecer.jpg);
+  background-size: cover;
+  background-position: auto;
+  background-repeat: repeat;
 }
 .fondo {
-  width: 100%;
-  height: 91vh;
-  background-image: url(../img/campos.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  grid-area: fondo
+  position: relative;
+  top: 15%;
+  text-align: center;
+  border: 5px dotted #746d00;
+  margin-left: 21.875rem;
+  margin-right: 21.875rem;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  border-radius: 2.1875rem;
+  overflow: hidden;
+  
 }
+.scale-up-hor-center {animation:scale-up-hor-center .4s cubic-bezier(.39,.575,.565,1.000) both}
+
+@keyframes scale-up-hor-center{0%{transform:scaleX(.4)}100%{transform:scaleX(1)}}
+
 .fondo div {
   text-align: center;
   margin-left: 30%;
@@ -81,13 +76,13 @@
 }
 
 .button {
-  font-size: 16px;
-  padding: 16px 30px;
+  font-size: 1rem;
+  padding: 1rem 1.875rem;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   text-align: center;
-  background-color: #fdd17a;
+  background-color: #8c7f00;
 }
 
 .button a {
@@ -99,29 +94,62 @@
 .button:hover {
   background-color: #b6a714;
 }
+/*Footer*/
+.footer {
+  position: relative;
+  top: 40%;
+  text-align: center;
+}
+.footerContacto {
+  position: relative;
+  top: 10%;
+  text-align: center;
+}
+.redes {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.derechos p {
+  font-family: "Kaushan Script", cursive;
+}
+.redesLogo img {
+  width: 3.125rem;
+}
 
-
+/*Seccion nosotros*/
+.nosotros{
+ background-color: #ece6db;
+}
 .nosotros img {
-  width: 500px;
+  width: 31.25rem;
   height: auto;
-  margin: 30px;
+  margin: 1.875rem;
 }
 .pnosotros {
   text-align: justify;
-  margin: 80px;
+  margin: 5rem;
 }
+
+.tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
 .nuestraHistoria {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
   text-align: center;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-family: "Kaushan Script", cursive;
 }
 
 .pnosotros h4 {
   font-family: "Kaushan Script", cursive;
-  font-size: 25px;
+  font-size: 1.5625rem;
   text-align: end;
-  padding-top: 100px;
+  padding-top: 6.25rem;
+}
+/*Seccion galeria*/
+.back{
+  background-color: #ece6db;
 }
 .nuestraCasa {
   font-size: 1.875em;
@@ -129,15 +157,17 @@
   background-color: #e4ca98;
   color: #130e05;
   font-family: "Kaushan Script", cursive;
-  margin: 30px;
+  margin: 1.875rem;
   grid-area: nuestraCasa
 }
+
+/*Seccion ubicacion*/
 .boxUbicacion{
   text-align: center;
 }
 .ubicacion {
   font-family: "Kaushan Script", cursive;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   background-color: #e4ca98;
   grid-area: ubicacion
@@ -146,46 +176,40 @@
   padding: 50px;
 }
 
-.contacto {
-  font-family: "Kaushan Script", cursive;
-  font-size: 40px;
-  grid-area: contacto;
+/*Seccion contacto*/
+.header {
+  color: #0f0e0b;
+  font-size: 3.125rem;
+  padding: 20px;
 }
-.sectionContacto {
-  grid-area: section;
-  text-align: center;
+
+.bigicon {
+  font-size: 35px;
+  color: #e4ca98;
 }
-.redes {
-  font-family: "Kaushan Script", cursive;
-  font-size: 40px;
-  text-align: center;
+.btn{
+  background-color: #e0b67d;
 }
-.footer {
-  background: rgb(175, 141, 77);
-  background: linear-gradient(
-    0deg,
-    rgba(175, 141, 77, 1) 0%,
-    rgba(228, 202, 152, 0.9948179955575981) 59%
-  );
-  grid-area: footer
+.btn:hover {
+  background-color: #9ad887;
 }
-.redesLogo {
+.text-center {
+  padding-top: 30px;
+}
+.form-group {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.redesLogo img {
-  height: 5%;
-  width: 5%;
-  margin: 10px;
-}
-.derechos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.derechos p {
-  font-family: "Kaushan Script", cursive;
+.fondoContacto{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/atardecer.jpg);
+  background-size: cover;
 }
 /* orden de las paginas html y responsive*/
 /* index.html */
@@ -218,6 +242,27 @@
 }
 /*INDEX MEDIA*/
 @media only screen and (max-width: 600px) {
+  #header .logo{
+    height: 30px;
+  }
+  #header .logoMargin{
+    margin-left: 0px;
+  }
+  .grid{
+    height: 120vh;
+  }
+  .fondo{
+    margin-left: 8px;
+    margin-right: 8px;
+    top: 22%;
+  }
+  .fondo .caja{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .footer{
+    top: 50%;
+  }
   .encabezado a {
     font-size: 0.5em;
   }
@@ -265,6 +310,9 @@
   .nuestraCasa h1 {
     font-size: 25px;
   }
+  .fondoContacto{
+    height: 120vh;
+  }
 }
 @media only screen and (max-width: 1295px) {
   .nosotros{
@@ -274,3 +322,4 @@
     justify-content: center;
   }
 }
+
