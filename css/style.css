@@ -112,13 +112,14 @@
 }
 .derechos p {
   font-family: "Kaushan Script", cursive;
+  margin-bottom: 0px;
 }
 .redesLogo img {
   width: 3.125rem;
 }
 
 /*Seccion nosotros*/
-.nosotros{
+.fondoN{
  background-color: #ece6db;
 }
 .nosotros img {
@@ -129,6 +130,9 @@
 .pnosotros {
   text-align: justify;
   margin: 5rem;
+}
+.alturaC{
+  margin-top: 120px;
 }
 
 .tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
@@ -152,16 +156,22 @@
   background-color: #ece6db;
 }
 .nuestraCasa {
-  font-size: 1.875em;
   text-align: center;
   background-color: #e4ca98;
   color: #130e05;
   font-family: "Kaushan Script", cursive;
-  margin: 1.875rem;
-  grid-area: nuestraCasa
+}
+.grid-item img {
+  height: 80%;
+  width: 70%;
+  border-radius: 20%;
 }
 
 /*Seccion ubicacion*/
+.fondoUbi{
+  background-color: #ece6db;
+  height: 100vh;
+}
 .boxUbicacion{
   text-align: center;
 }
@@ -174,6 +184,9 @@
 }
 .mapa{
   padding: 50px;
+}
+.footerUbi{
+  text-align: center;
 }
 
 /*Seccion contacto*/
@@ -218,7 +231,6 @@
 .gridNosotros {
   display: grid;
   grid-template-columns:40% 50% 50%;
-  grid-template-areas: "encabezado encabezado encabezado" "nosotros nosotros nosotros" "footer footer footer";
 }
 
 /*galeria*/
@@ -229,16 +241,6 @@
   font-family: "Kaushan Script", cursive;
   text-align: center;
   color: #e0b67d;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-area: fotos
-}
-.grid-item img {
-  height: 80%;
-  width: 70%;
-  border-radius: 20%;
 }
 /*INDEX MEDIA*/
 @media only screen and (max-width: 600px) {
@@ -263,12 +265,7 @@
   .footer{
     top: 50%;
   }
-  .encabezado a {
-    font-size: 0.5em;
-  }
-  .encabezado img{
-    height: 30px;
-  }
+
   .fondo h1{
     font-size: 3.0rem;
   }
