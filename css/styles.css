@@ -3,20 +3,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 /*menu*/
 .logoMargin {
   margin-left: 6.25rem;
 }
-.navbar{
+
+.navbar {
   background-color: #efe4d2;
 }
+
 .logo {
   height: 3.75rem;
 }
@@ -24,15 +26,18 @@
 .menu {
   margin: auto;
 }
+
 .menu a {
   color: black;
   font-size: 1.25rem;
   font-family: "Cinzel", serif;
   padding: 0.7rem;
 }
+
 .desplegable {
   text-align: center;
 }
+
 /*centro index*/
 .grid {
   width: 100%;
@@ -42,6 +47,7 @@
   background-position: auto;
   background-repeat: repeat;
 }
+
 .fondo {
   position: relative;
   top: 15%;
@@ -53,21 +59,45 @@
   padding-bottom: 6.25rem;
   border-radius: 2.1875rem;
   overflow: hidden;
-  
 }
-.scale-up-hor-center {animation:scale-up-hor-center .4s cubic-bezier(.39,.575,.565,1.000) both}
 
-@keyframes scale-up-hor-center{0%{transform:scaleX(.4)}100%{transform:scaleX(1)}}
-
-.fondo div {
+.fondo .div {
   text-align: center;
   margin-left: 30%;
   margin-right: 30%;
 }
+
 .fondo h1 {
   color: #050402;
   font-size: 4.375rem;
   font-family: "DM Serif Display", serif;
+}
+
+.scale-up-hor-center {
+  -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 
 .caja {
@@ -91,58 +121,66 @@
   font-family: "DM Serif Display", serif;
 }
 
-.button:hover {
+.button .button:hover {
   background-color: #b6a714;
 }
+
 /*Footer*/
 .footer {
   position: relative;
   top: 40%;
   text-align: center;
 }
-.footerContacto {
-  position: relative;
-  top: 10%;
-  text-align: center;
-}
-.redes {
+
+.footer .redes {
   font-family: "Kaushan Script", cursive;
   font-size: 2.5rem;
   text-align: center;
 }
-.derechos p {
+
+.footer .derechos p {
   font-family: "Kaushan Script", cursive;
   margin-bottom: 0px;
 }
-.redesLogo img {
+
+.footer .redesLogo img {
+  width: 3.125rem;
+}
+
+.footerUbi {
+  position: relative;
+  text-align: center;
+}
+
+.footerUbi .redes {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.footerUbi .derechos p {
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 0px;
+}
+
+.footerUbi .redesLogo img {
   width: 3.125rem;
 }
 
 /*Seccion nosotros*/
-.fondoN{
- background-color: #ece6db;
+.fondoN {
+  background-color: #ece6db;
 }
+
 .nosotros img {
   width: 31.25rem;
   height: auto;
   margin: 1.875rem;
 }
+
 .pnosotros {
   text-align: justify;
   margin: 5rem;
-}
-.alturaC{
-  margin-top: 120px;
-}
-
-.tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
-@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
-
-.nuestraHistoria {
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 3.125rem;
-  font-family: "Kaushan Script", cursive;
 }
 
 .pnosotros h4 {
@@ -151,172 +189,261 @@
   text-align: end;
   padding-top: 6.25rem;
 }
+
+.alturaC {
+  margin-top: 120px;
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nuestraHistoria {
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 3.125rem;
+  font-family: "Kaushan Script", cursive;
+}
+
 /*Seccion galeria*/
-.back{
+.back {
   background-color: #ece6db;
 }
+
 .nuestraCasa {
   text-align: center;
   background-color: #e4ca98;
   color: #130e05;
   font-family: "Kaushan Script", cursive;
 }
+
 .grid-item img {
   height: 80%;
   width: 70%;
   border-radius: 20%;
 }
 
-/*Seccion ubicacion*/
-.fondoUbi{
-  background-color: #ece6db;
-  height: 100vh;
-}
-.boxUbicacion{
-  text-align: center;
-}
-.ubicacion {
-  font-family: "Kaushan Script", cursive;
-  font-size: 2.5rem;
-  text-align: center;
-  background-color: #e4ca98;
-  grid-area: ubicacion
-}
-.mapa{
-  padding: 50px;
-}
-.footerUbi{
-  text-align: center;
-}
-
-/*Seccion contacto*/
-.header {
-  color: #0f0e0b;
-  font-size: 3.125rem;
-  padding: 20px;
-}
-
-.bigicon {
-  font-size: 35px;
-  color: #e4ca98;
-}
-.btn{
-  background-color: #e0b67d;
-}
-.btn:hover {
-  background-color: #9ad887;
-}
-.text-center {
-  padding-top: 30px;
-}
-.form-group {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.fondoContacto{
-  width: 100%;
-  height: 100vh;
-  background-image: url(../img/atardecer.jpg);
-  background-size: cover;
-}
-/* orden de las paginas html y responsive*/
-/* index.html */
-
-/*nosotros*/ 
-.gridNosotros {
-  display: grid;
-  grid-template-columns:40% 50% 50%;
-}
-
 /*galeria*/
 .galeria {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
   gap: 10px;
   font-family: "Kaushan Script", cursive;
   text-align: center;
   color: #e0b67d;
 }
+
+/*Seccion ubicacion*/
+.fondoUbi {
+  background-color: #ece6db;
+  height: 100vh;
+}
+
+.boxUbicacion {
+  text-align: center;
+}
+
+.ubicacion {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: #e4ca98;
+  grid-area: ubicacion;
+}
+
+.mapa {
+  padding: 50px;
+}
+
+.footerUbi {
+  text-align: center;
+}
+
+/*Seccion contacto*/
+.bigicon {
+  font-size: 35px;
+  color: #e4ca98;
+}
+
+.btn {
+  background-color: #e0b67d;
+}
+
+.btn:hover {
+  background-color: #9ad887;
+}
+
+.text-center {
+  padding-top: 30px;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fondoContacto {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/atardecer.jpg);
+  background-size: cover;
+}
+
+/* orden de las paginas html y responsive*/
+/*nosotros*/
+.gridNosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 50% 50%;
+      grid-template-columns: 40% 50% 50%;
+}
+
 /*INDEX MEDIA*/
 @media only screen and (max-width: 600px) {
-  #header .logo{
+  #header
+.logo {
     height: 30px;
   }
-  #header .logoMargin{
+  #header .logoMargin {
     margin-left: 0px;
   }
-  .grid{
+  .grid {
     height: 120vh;
   }
-  .fondo{
+  .fondo {
     margin-left: 8px;
     margin-right: 8px;
     top: 22%;
   }
-  .fondo .caja{
+  .fondo .caja {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .footer{
+  .footer {
     top: 50%;
   }
-
-  .fondo h1{
+  .fondo h1 {
     font-size: 3.0rem;
   }
   .galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .nosotros{
+  .nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .imgnosotros img{
+  .imgnosotros img {
     height: 400px;
     width: 300px;
   }
-  .nuestraHistoria{
+  .nuestraHistoria {
     margin-bottom: 20px;
   }
   .pnosotros {
     margin: 0px;
   }
-  .pnosotros p{
+  .pnosotros p {
     padding: 20px;
   }
-  .pnosotros h4{
+  .pnosotros h4 {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 50px;
   }
-  .ubicacion h2{
+  .ubicacion h2 {
     font-size: 50px;
   }
-  .mapa{
+  .mapa {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .nuestraCasa h1 {
     font-size: 25px;
   }
-  .fondoContacto{
+  .fondoContacto {
     height: 120vh;
   }
 }
+
 @media only screen and (max-width: 1295px) {
-  .nosotros{
+  .nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-
+/*# sourceMappingURL=styles.css.map */
