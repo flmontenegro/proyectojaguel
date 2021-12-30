@@ -4,6 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
+@import 'header';
+@import 'footer';
+@import 'variables';
+@import 'mapa';
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,60 +18,47 @@
   box-sizing: border-box;
 }
 
-  /*menu*/
-  .logoMargin {
-    margin-left: 6.25rem;
-  }
-  .navbar{
-    background-color: #efe4d2;
-  }
-  .logo {
-    height: 3.75rem;
-  }
-  
-  .menu {
-    margin: auto;
-    a {
-        color: black;
-        font-size: 1.25rem;
-        font-family: "Cinzel", serif;
-        padding: 0.7rem;
-      }
-  }
-  
-  .desplegable {
-    text-align: center;
-  }
 
-  /*centro index*/
-.grid {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/atardecer.jpg);
-    background-size: cover;
-    background-position: auto;
-    background-repeat: repeat;
+/*centro index - EXTEND*/ 
+
+.fondoI {
+  @extend .fondo__full;
+    background: {
+      image: url(../img/atardecer.jpg);
+      size: cover;
+      position: auto;
+      repeat: repeat;
+    }
+    
   }
   .fondo {
     position: relative;
     top: 15%;
     text-align: center;
     border: 5px dotted #746d00;
-    margin-left: 21.875rem;
-    margin-right: 21.875rem;
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
+    margin: {
+      left: 21.875rem;
+      right: 21.875rem;
+    }
+    padding: {
+      top: 6.25rem;
+      bottom: 6.25rem;
+    }
     border-radius: 2.1875rem;
     overflow: hidden;
     .div {
         text-align: center;
-        margin-left: 30%;
-        margin-right: 30%;
+        margin: {
+          left: 30%;
+          right: 30%;
+        }
       }
     h1 {
         color: #050402;
-        font-size: 4.375rem;
-        font-family: "DM Serif Display", serif;
+        font: {
+          size: 4.375rem;
+          family: $font-principal
+        }
       }
     
   }
@@ -79,63 +73,21 @@
   }
   
   .button {
-    font-size: 1rem;
-    padding: 1rem 1.875rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 0.3125rem;
-    text-align: center;
-    background-color: #8c7f00;
+    @include button;
     a {
         text-decoration: none;
         color: black;
-        font-family: "DM Serif Display", serif;
+        font-family: $font-principal
       }
-    .button:hover {
+      &:hover {
         background-color: #b6a714;
       }
   }
 
-  /*Footer*/
-.footer {
-    position: relative;
-    top: 40%;
-    text-align: center;
-    .redes {
-        font-family: "Kaushan Script", cursive;
-        font-size: 2.5rem;
-        text-align: center;
-      }
-    .derechos p {
-        font-family: "Kaushan Script", cursive;
-        margin-bottom: 0px;
-      }
-    .redesLogo img {
-        width: 3.125rem;
-      }
-      
-  }
-  .footerUbi{
-    position: relative;
-    text-align: center;
-    .redes {
-      font-family: "Kaushan Script", cursive;
-      font-size: 2.5rem;
-      text-align: center;
-    }
-  .derechos p {
-      font-family: "Kaushan Script", cursive;
-      margin-bottom: 0px;
-    }
-  .redesLogo img {
-      width: 3.125rem;
-    }
-  }
+ 
 
   /*Seccion nosotros*/
-    .fondoN{
-    background-color: #ece6db;
-   }
+    
    .nosotros img {
      width: 31.25rem;
      height: auto;
@@ -145,8 +97,10 @@
      text-align: justify;
      margin: 5rem;
     h4 {
-        font-family: "Kaushan Script", cursive;
-        font-size: 1.5625rem;
+      font: {
+        family: $font-secundaria;
+        size: 1.5625rem;
+      }
         text-align: end;
         padding-top: 6.25rem;
       }
@@ -161,19 +115,20 @@
    .nuestraHistoria {
      margin-bottom: 5rem;
      text-align: center;
-     font-size: 3.125rem;
-     font-family: "Kaushan Script", cursive;
+     font: {
+      size: 3.125rem;
+      family: $font-secundaria
+
+     }
    }
 
    /*Seccion galeria*/
-.back{
-    background-color: #ece6db;
-  }
+
 .nuestraCasa {
     text-align: center;
     background-color: #e4ca98;
     color: #130e05;
-    font-family: "Kaushan Script", cursive;
+    font-family: $font-secundaria
   }
 .grid-item img {
     height: 80%;
@@ -186,22 +141,20 @@
   display: grid;
   grid-template-columns: 33% 33% 33%;
   gap: 10px;
-  font-family: "Kaushan Script", cursive;
+  font-family: $font-secundaria;
   text-align: center;
   color: #e0b67d;
 }
 
   /*Seccion ubicacion*/
-.fondoUbi{
-    background-color: #ece6db;
-    height: 100vh;
-  }
 .boxUbicacion{
     text-align: center;
   }
 .ubicacion {
-    font-family: "Kaushan Script", cursive;
-    font-size: 2.5rem;
+  font: {
+    family: $font-secundaria;
+    size: 2.5rem;
+  }
     text-align: center;
     background-color: #e4ca98;
     grid-area: ubicacion
@@ -211,6 +164,7 @@
   }
 .footerUbi{
     text-align: center;
+    background-color: #ece6db;
   }
 
   /*Seccion contacto*/
@@ -235,12 +189,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-.fondoContacto{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/atardecer.jpg);
-    background-size: cover;
   }
   
   /* orden de las paginas html y responsive*/
@@ -305,8 +253,10 @@
   }
   .pnosotros h4{
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding: {
+      top: 20px;
+      bottom: 50px;
+    }
   }
   .ubicacion h2{
     font-size: 50px;

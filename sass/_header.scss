@@ -1,0 +1,20 @@
+.header {
+    &__margin {
+        margin-left: 6.25rem;
+    }
+    &__logo {
+        height: 2.75rem;
+    }
+    &__menu {
+        margin: auto;
+        a {
+            color: black;
+            font-size: 1.25rem;
+            font-family: "Cinzel", serif;
+            padding: 0.7rem;
+          }  
+    }
+    &__despl {
+        text-align: center;
+    }
+}

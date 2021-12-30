@@ -1,0 +1,41 @@
+ $font-footer: "Kaushan Script", cursive;
+ .footer {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    color: black;
+    .redes {
+        font: {
+            family: $font-footer;
+            size: 2.5rem;
+        }
+        text-align: center;
+      }
+    .derechos p {
+        font-family: $font-footer;
+        margin-bottom: 0px;
+      }
+    .redesLogo img {
+        width: 3.125rem;
+      }
+      
+  }
+  .footerUbi{
+    position: relative;
+    text-align: center;
+    color: black;
+    .redes {
+        font: {
+            family: $font-footer;
+            size: 2.5rem;
+        }
+      text-align: center;
+    }
+  .derechos p {
+      font-family: $font-footer;
+      margin-bottom: 0px;
+    }
+  .redesLogo img {
+      width: 3.125rem;
+    }
+  }

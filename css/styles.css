@@ -3,6 +3,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+.header__margin {
+  margin-left: 6.25rem;
+}
+
+.header__logo {
+  height: 2.75rem;
+}
+
+.header__menu {
+  margin: auto;
+}
+
+.header__menu a {
+  color: black;
+  font-size: 1.25rem;
+  font-family: "Cinzel", serif;
+  padding: 0.7rem;
+}
+
+.header__despl {
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+  top: 40%;
+  text-align: center;
+  color: black;
+}
+
+.footer .redes {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.footer .derechos p {
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 0px;
+}
+
+.footer .redesLogo img {
+  width: 3.125rem;
+}
+
+.footerUbi {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.footerUbi .redes {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.footerUbi .derechos p {
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 0px;
+}
+
+.footerUbi .redesLogo img {
+  width: 3.125rem;
+}
+
+.header__fondo {
+  background: #efe4d2;
+}
+
+.fondoN {
+  background-color: #ece6db;
+}
+
+/*EXTEND*/
+.fondo__full, .fondoI {
+  width: 100%;
+  height: 100vh;
+}
+
+/*MIXIN*/
 * {
   margin: 0;
   padding: 0;
@@ -10,38 +91,8 @@
   box-sizing: border-box;
 }
 
-/*menu*/
-.logoMargin {
-  margin-left: 6.25rem;
-}
-
-.navbar {
-  background-color: #efe4d2;
-}
-
-.logo {
-  height: 3.75rem;
-}
-
-.menu {
-  margin: auto;
-}
-
-.menu a {
-  color: black;
-  font-size: 1.25rem;
-  font-family: "Cinzel", serif;
-  padding: 0.7rem;
-}
-
-.desplegable {
-  text-align: center;
-}
-
-/*centro index*/
-.grid {
-  width: 100%;
-  height: 100vh;
+/*centro index - EXTEND*/
+.fondoI {
   background-image: url(../img/atardecer.jpg);
   background-size: cover;
   background-position: auto;
@@ -121,57 +172,11 @@
   font-family: "DM Serif Display", serif;
 }
 
-.button .button:hover {
+.button:hover {
   background-color: #b6a714;
 }
 
-/*Footer*/
-.footer {
-  position: relative;
-  top: 40%;
-  text-align: center;
-}
-
-.footer .redes {
-  font-family: "Kaushan Script", cursive;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.footer .derechos p {
-  font-family: "Kaushan Script", cursive;
-  margin-bottom: 0px;
-}
-
-.footer .redesLogo img {
-  width: 3.125rem;
-}
-
-.footerUbi {
-  position: relative;
-  text-align: center;
-}
-
-.footerUbi .redes {
-  font-family: "Kaushan Script", cursive;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.footerUbi .derechos p {
-  font-family: "Kaushan Script", cursive;
-  margin-bottom: 0px;
-}
-
-.footerUbi .redesLogo img {
-  width: 3.125rem;
-}
-
 /*Seccion nosotros*/
-.fondoN {
-  background-color: #ece6db;
-}
-
 .nosotros img {
   width: 31.25rem;
   height: auto;
@@ -233,10 +238,6 @@
 }
 
 /*Seccion galeria*/
-.back {
-  background-color: #ece6db;
-}
-
 .nuestraCasa {
   text-align: center;
   background-color: #e4ca98;
@@ -263,11 +264,6 @@
 }
 
 /*Seccion ubicacion*/
-.fondoUbi {
-  background-color: #ece6db;
-  height: 100vh;
-}
-
 .boxUbicacion {
   text-align: center;
 }
@@ -286,6 +282,7 @@
 
 .footerUbi {
   text-align: center;
+  background-color: #ece6db;
 }
 
 /*Seccion contacto*/
@@ -325,13 +322,6 @@
           align-items: center;
 }
 
-.fondoContacto {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../img/atardecer.jpg);
-  background-size: cover;
-}
-
 /* orden de las paginas html y responsive*/
 /*nosotros*/
 .gridNosotros {
@@ -343,8 +333,7 @@
 
 /*INDEX MEDIA*/
 @media only screen and (max-width: 600px) {
-  #header
-.logo {
+  #header .logo {
     height: 30px;
   }
   #header .logoMargin {

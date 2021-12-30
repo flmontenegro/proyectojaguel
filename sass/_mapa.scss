@@ -1,0 +1,29 @@
+$fondos: (
+    header: #efe4d2,
+    principal: #ece6db,
+);
+
+.header__fondo {
+    background: map-get($fondos , header );
+}
+.fondoN{
+    background-color: map-get($fondos , principal);
+   }
+
+   /*EXTEND*/
+.fondo__full {
+    width: 100%;
+    height: 100vh;
+}
+
+ /*MIXIN*/
+ @mixin button() {
+    font-size: 1rem;
+    padding: 1rem 1.875rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    text-align: center;
+    background-color: #8c7f00;
+ }
+
