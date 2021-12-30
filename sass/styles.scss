@@ -73,7 +73,7 @@
   }
   
   .button {
-    @include button;
+    @include button();
     a {
         text-decoration: none;
         color: black;
