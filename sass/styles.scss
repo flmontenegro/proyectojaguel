@@ -199,6 +199,51 @@
   grid-template-columns:40% 50% 50%;
 }
 
+/*recibe*/ 
+.fond {
+  text-align: center;
+  background: {
+    image: url(../img/pileta.jpg);
+    position: center;
+    size: cover;
+    attachment: fixed;
+  }
+  position: center;
+  width: 100%;
+  height: 100vh;
+  h1{
+    color: #050402;
+        font: {
+          size: 4.375rem;
+          family: $font-principal
+        }
+    padding-top: 150px;
+  }
+  h2{
+    color: #050402;
+        font: {
+          size: 2.375rem;
+          family: $font-principal
+        }
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+  }
+  .volver{
+    text-align: center;
+    @include button();
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: $font-principal
+      }
+      &:hover {
+        background-color: #b6a714;
+      }
+
+  }
+
+}
 
 /*INDEX MEDIA*/
 @media only screen and (max-width: 600px) {
@@ -206,7 +251,7 @@
   .logo{
     height: 30px;
   }
-  #header .logoMargin{
+  #header .header__margin{
     margin-left: 0px;
   }
   .grid{

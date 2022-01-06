@@ -1,5 +1,0 @@
-Para aplicar SEO a mi proyecto, realicé los siguientes cambios:
-- Ordene el código html, cerrando etiquetas abiertas, mejorando las tabulaciones y utilizando la etiqueta <main> en todas las paginas para poner el contenido principal.
-- Utilice las palabras claves que representan a mi proyecto, mediante la etiqueta name="keywords". Al ser una pagina de una casa en alquiler, puse las palabras qume resultan mas representativas o lo que un usuario pondria para buscar un alojamiento: "casa, quinta, alquiler, Sierra de los padres, Mar del Plata, Buenos Aires, Argentina, pileta, parilla, parque"
-- Mediante la etiqueta name="description", hice una descripcion mas detallada, donde contiene ubicacion y detalles principales de la casa.
-- Modifique los <title> de cada página, indincando por ej: Home | Casa el Jaguel, Contacto | Casa el Jaguel, Ubicacion | Casa el Jaguel
