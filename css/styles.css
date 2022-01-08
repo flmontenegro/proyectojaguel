@@ -91,19 +91,50 @@
   box-sizing: border-box;
 }
 
+#header {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+
 /*centro index - EXTEND*/
+.box1 {
+  width: 100%;
+  height: 120vh;
+  background-image: url(../img/hogar.jpg);
+  background-position: center;
+  position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.box2 {
+  width: 100%;
+  height: 110vh;
+  background-image: url(../img/pile.jpg);
+  background-position: center;
+  position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .fondoI {
   background-image: url(../img/atardecer.jpg);
+  background-position: center;
   background-size: cover;
-  background-position: auto;
-  background-repeat: repeat;
+  background-attachment: fixed;
+  position: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .fondo {
   position: relative;
   top: 15%;
   text-align: center;
-  border: 5px dotted #746d00;
+  border: 5px dotted #e8cb95;
   margin-left: 21.875rem;
   margin-right: 21.875rem;
   padding-top: 6.25rem;
@@ -119,7 +150,7 @@
 }
 
 .fondo h1 {
-  color: #050402;
+  color: #e8cb95;
   font-size: 4.375rem;
   font-family: "DM Serif Display", serif;
 }
@@ -153,7 +184,7 @@
 
 .caja {
   position: relative;
-  top: 45%;
+  top: 30%;
 }
 
 .button {
@@ -163,7 +194,7 @@
   cursor: pointer;
   border-radius: 0.3125rem;
   text-align: center;
-  background-color: #8c7f00;
+  background-color: #ddb944c2;
 }
 
 .button a {
@@ -243,6 +274,7 @@
   background-color: #e4ca98;
   color: #130e05;
   font-family: "Kaushan Script", cursive;
+  margin-top: 70px;
 }
 
 .grid-item img {
@@ -266,6 +298,7 @@
 /*Seccion ubicacion*/
 .boxUbicacion {
   text-align: center;
+  margin-top: 70px;
 }
 
 .ubicacion {
@@ -322,6 +355,10 @@
           align-items: center;
 }
 
+.formAlt {
+  margin-top: 100px;
+}
+
 /* orden de las paginas html y responsive*/
 /*nosotros*/
 .gridNosotros {
@@ -366,7 +403,7 @@
   cursor: pointer;
   border-radius: 0.3125rem;
   text-align: center;
-  background-color: #8c7f00;
+  background-color: #ddb944c2;
 }
 
 .fond .volver a {
@@ -387,6 +424,10 @@
   #header .header__margin {
     margin-left: 0px;
   }
+  #header {
+    position: relative;
+    background-color: #e4ca98;
+  }
   .grid {
     height: 120vh;
   }
@@ -405,6 +446,10 @@
   .fondo h1 {
     font-size: 3.0rem;
   }
+  .box2 {
+    height: 130vh;
+  }
+  /*GALERIA*/
   .galeria {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -414,6 +459,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .nuestraCasa {
+    margin-top: 20px;
+  }
+  /*NOSOTROS*/
   .nosotros {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -447,6 +496,10 @@
     padding-top: 20px;
     padding-bottom: 50px;
   }
+  .alturaC {
+    margin-top: 10px;
+  }
+  /*UBICACION*/
   .ubicacion h2 {
     font-size: 50px;
   }
@@ -463,6 +516,13 @@
   }
   .fondoContacto {
     height: 120vh;
+  }
+  .boxUbicacion {
+    margin-top: 10px;
+  }
+  /*CONTACTO*/
+  .formAlt {
+    margin-top: 10px;
   }
 }
 

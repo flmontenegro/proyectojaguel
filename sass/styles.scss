@@ -17,25 +17,51 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+#header{
+  width: 100%;
+  border-bottom: 1px solid #000;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
 
 /*centro index - EXTEND*/ 
-
+.box1{
+  width: 100%;
+  height: 120vh;
+  background-image: url(../img/hogar.jpg);
+  background-position: center;
+  position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box2{
+  width: 100%;
+  height: 110vh;
+  background-image: url(../img/pile.jpg);
+  background-position: center;
+  position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .fondoI {
   @extend .fondo__full;
     background: {
       image: url(../img/atardecer.jpg);
+      position: center;
       size: cover;
-      position: auto;
-      repeat: repeat;
+      attachment: fixed;
     }
+    position: center;
+    width: 100%;
+    height: 100vh;
     
   }
   .fondo {
     position: relative;
     top: 15%;
     text-align: center;
-    border: 5px dotted #746d00;
+    border: 5px dotted #e8cb95;
     margin: {
       left: 21.875rem;
       right: 21.875rem;
@@ -54,7 +80,7 @@
         }
       }
     h1 {
-        color: #050402;
+        color: #e8cb95;
         font: {
           size: 4.375rem;
           family: $font-principal
@@ -66,10 +92,10 @@
   
   @keyframes scale-up-hor-center{0%{transform:scaleX(.4)}100%{transform:scaleX(1)}}
   
-  
+
   .caja {
     position: relative;
-    top: 45%;
+    top: 30%;
   }
   
   .button {
@@ -128,7 +154,8 @@
     text-align: center;
     background-color: #e4ca98;
     color: #130e05;
-    font-family: $font-secundaria
+    font-family: $font-secundaria;
+    margin-top: 70px;
   }
 .grid-item img {
     height: 80%;
@@ -149,6 +176,7 @@
   /*Seccion ubicacion*/
 .boxUbicacion{
     text-align: center;
+    margin-top: 70px;
   }
 .ubicacion {
   font: {
@@ -189,6 +217,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .formAlt{
+    margin-top: 100px;
   }
   
   /* orden de las paginas html y responsive*/
@@ -247,12 +278,15 @@
 
 /*INDEX MEDIA*/
 @media only screen and (max-width: 600px) {
-  #header 
-  .logo{
+  #header .logo{
     height: 30px;
   }
   #header .header__margin{
     margin-left: 0px;
+  }
+  #header {
+    position: relative;
+    background-color: #e4ca98;
   }
   .grid{
     height: 120vh;
@@ -273,10 +307,18 @@
   .fondo h1{
     font-size: 3.0rem;
   }
+  .box2{
+    height: 130vh;
+  }
+  /*GALERIA*/
   .galeria {
     display: flex;
     flex-direction: column;
   }
+  .nuestraCasa{
+    margin-top: 20px;
+  }
+  /*NOSOTROS*/
   .nosotros{
     display: flex;
     flex-direction: column;
@@ -303,6 +345,10 @@
       bottom: 50px;
     }
   }
+  .alturaC{
+    margin-top: 10px;
+  }
+  /*UBICACION*/
   .ubicacion h2{
     font-size: 50px;
   }
@@ -315,6 +361,13 @@
   }
   .fondoContacto{
     height: 120vh;
+  }
+  .boxUbicacion{
+    margin-top: 10px;
+  }
+  /*CONTACTO*/
+  .formAlt{
+    margin-top: 10px;
   }
 }
 @media only screen and (max-width: 1295px) {
