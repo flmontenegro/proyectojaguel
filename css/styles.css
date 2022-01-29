@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Dongle:wght@700&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Dongle:wght@700&family=Pacifico&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
 .header__margin {
   margin-left: 6.25rem;
 }
@@ -26,10 +31,18 @@
   text-align: center;
 }
 
+#header {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  position: relative;
+  top: 0;
+}
+
 .footer {
   position: relative;
   top: 40%;
   text-align: center;
+  background-color: #ece6db;
   color: black;
 }
 
@@ -73,6 +86,10 @@
   background: rgba(239, 228, 210, 0.2);
 }
 
+.header__fondoB {
+  background: #fff;
+}
+
 .fondoN {
   background-color: #ece6db;
 }
@@ -91,33 +108,30 @@
   box-sizing: border-box;
 }
 
-#header {
-  width: 100%;
-  border-bottom: 1px solid #000;
-  position: fixed;
-  top: 0;
-  z-index: 99999;
-}
-
 /*centro index - EXTEND*/
-.box1 {
+.caja2 {
   width: 100%;
   height: 120vh;
-  background-image: url(../img/hogar.jpg);
-  background-position: center;
-  position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.box2 {
-  width: 100%;
-  height: 110vh;
   background-image: url(../img/pile.jpg);
   background-position: center;
   position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.nuevo {
+  background-color: #ece6db;
+}
+
+.nuevo .casa {
+  text-align: center;
+  background-color: #e4ca98;
+  color: #130e05;
+  font-family: "Playfair Display SC", serif;
+}
+
+.nuevo .casa2 {
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .fondoI {
@@ -127,16 +141,13 @@
   background-attachment: fixed;
   position: center;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 
 .fondo {
   position: relative;
   top: 15%;
   text-align: center;
-  border: 5px dotted #e8cb95;
-  margin-left: 21.875rem;
-  margin-right: 21.875rem;
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
   border-radius: 2.1875rem;
@@ -207,27 +218,83 @@
   background-color: #b6a714;
 }
 
+/*Seccion index-galeria*/
+.nuestraCasa {
+  text-align: center;
+  background-color: #e4ca98;
+  color: #130e05;
+  font-family: "Playfair Display SC", serif;
+  margin-top: 70px;
+}
+
+.grid-item img {
+  height: 50vh;
+  width: 70%;
+  border-radius: 20%;
+}
+
+/*galeria*/
+.galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  gap: 10px;
+  font-family: "Playfair Display SC", serif;
+  text-align: center;
+  color: #000000;
+}
+
 /*Seccion nosotros*/
-.nosotros img {
-  width: 31.25rem;
-  height: auto;
-  margin: 1.875rem;
-}
-
 .pnosotros {
-  text-align: justify;
-  margin: 5rem;
+  margin: 3rem;
 }
 
-.pnosotros h4 {
-  font-family: "Kaushan Script", cursive;
+.pnosotros .tituloSec {
+  font-size: 3.5rem;
+  font-family: "Playfair Display SC", serif;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.pnosotros .text {
+  font-size: 1.1rem;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+}
+
+.pnosotros .items {
+  font-size: 1.1rem;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+}
+
+.pnosotros .tituloTer {
+  font-size: 1.8rem;
+  font-family: "Playfair Display SC", serif;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pnosotros .deseos {
   font-size: 1.5625rem;
-  text-align: end;
-  padding-top: 6.25rem;
+  font-family: "Playfair Display SC", serif;
+  text-align: center;
+  padding-top: 3.25rem;
 }
 
-.alturaC {
-  margin-top: 120px;
+.pnosotros .time {
+  font-size: 1.2rem;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+}
+
+.pnosotros .elba {
+  font-size: 2.50rem;
+  font-family: "Dancing Script", cursive;
+  text-align: end;
+  padding-top: 3.25rem;
 }
 
 .tracking-in-expand {
@@ -262,50 +329,53 @@
 }
 
 .nuestraHistoria {
-  margin-bottom: 5rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 3.125rem;
-  font-family: "Kaushan Script", cursive;
+  font-size: 5.2rem;
+  font-family: "Dongle", sans-serif;
 }
 
-/*Seccion galeria*/
-.nuestraCasa {
+/*Seccion info*/
+.sierra {
+  font-size: 3rem;
+  font-family: "Playfair Display SC", serif;
   text-align: center;
-  background-color: #e4ca98;
-  color: #130e05;
-  font-family: "Kaushan Script", cursive;
-  margin-top: 70px;
 }
 
-.grid-item img {
-  height: 80%;
-  width: 70%;
-  border-radius: 20%;
+.info {
+  font-size: 1rem;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
 }
 
-/*galeria*/
-.galeria {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 33% 33% 33%;
-      grid-template-columns: 33% 33% 33%;
-  gap: 10px;
-  font-family: "Kaushan Script", cursive;
-  text-align: center;
-  color: #e0b67d;
+.card {
+  background-color: #ece6db;
+  border: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .imagenCard {
+  width: 50%;
+  height: 50vh;
+}
+
+.lugar {
+  font-size: 2.5rem;
+  font-family: "DM Serif Display", serif;
 }
 
 /*Seccion ubicacion*/
 .boxUbicacion {
   text-align: center;
-  margin-top: 70px;
 }
 
-.ubicacion {
-  font-family: "Kaushan Script", cursive;
-  font-size: 2.5rem;
+.ubicacion h2 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 3.5rem;
   text-align: center;
-  background-color: #e4ca98;
+  background-color: #ece6db;
   grid-area: ubicacion;
 }
 
@@ -356,16 +426,13 @@
 }
 
 .formAlt {
-  margin-top: 100px;
+  margin-top: 1.875rem;
 }
 
-/* orden de las paginas html y responsive*/
-/*nosotros*/
-.gridNosotros {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 50% 50%;
-      grid-template-columns: 40% 50% 50%;
+.title {
+  font-family: "Playfair Display SC", serif;
+  font-size: 3rem;
+  color: black;
 }
 
 /*recibe*/
@@ -383,14 +450,14 @@
 .fond h1 {
   color: #050402;
   font-size: 4.375rem;
-  font-family: "DM Serif Display", serif;
+  font-family: "Playfair Display SC", serif;
   padding-top: 150px;
 }
 
 .fond h2 {
   color: #050402;
   font-size: 2.375rem;
-  font-family: "DM Serif Display", serif;
+  font-family: "Playfair Display SC", serif;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -409,7 +476,7 @@
 .fond .volver a {
   text-decoration: none;
   color: black;
-  font-family: "DM Serif Display", serif;
+  font-family: "Playfair Display SC", serif;
 }
 
 .fond .volver:hover {
@@ -449,7 +516,6 @@
   .box2 {
     height: 130vh;
   }
-  /*GALERIA*/
   .galeria {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -478,6 +544,10 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .nosotros .tituloSec {
+    font-size: 2.5rem;
+    padding-bottom: 0.1rem;
+  }
   .imgnosotros img {
     height: 400px;
     width: 300px;
@@ -496,8 +566,20 @@
     padding-top: 20px;
     padding-bottom: 50px;
   }
-  .alturaC {
-    margin-top: 10px;
+  /*INFO*/
+  .infoP .lugar {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .infoP .sierra {
+    font-size: 2.5rem;
+  }
+  .infoP .info {
+    font-size: 0.8rem;
+  }
+  .card .imagenCard {
+    width: 100%;
+    height: 30vh;
   }
   /*UBICACION*/
   .ubicacion h2 {
@@ -523,6 +605,13 @@
   /*CONTACTO*/
   .formAlt {
     margin-top: 10px;
+  }
+  .contacto .title {
+    font-size: 2rem;
+  }
+  /*RECIBE*/
+  .fond .consulta {
+    font-size: 2rem;
   }
 }
 

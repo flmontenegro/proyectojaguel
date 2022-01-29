@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dongle:wght@700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dongle:wght@700&family=Pacifico&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 @import 'header';
 @import 'footer';
@@ -17,33 +22,31 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-#header{
-  width: 100%;
-  border-bottom: 1px solid #000;
-  position: fixed;
-  top: 0;
-  z-index: 99999;
-}
+
 
 /*centro index - EXTEND*/ 
-.box1{
+.caja2{
   width: 100%;
   height: 120vh;
-  background-image: url(../img/hogar.jpg);
-  background-position: center;
-  position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.box2{
-  width: 100%;
-  height: 110vh;
   background-image: url(../img/pile.jpg);
   background-position: center;
   position: center;
   background-size: cover;
   background-attachment: fixed;
 }
+.nuevo{
+  background-color: #ece6db;
+  .casa{
+    text-align: center;
+    background-color: #e4ca98;
+    color: #130e05;
+    font-family: $font-deco;
+  }
+  .casa2{
+    font-family: $font-text
+  }
+}
+
 .fondoI {
   @extend .fondo__full;
     background: {
@@ -54,18 +57,13 @@
     }
     position: center;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     
   }
   .fondo {
     position: relative;
     top: 15%;
     text-align: center;
-    border: 5px dotted #e8cb95;
-    margin: {
-      left: 21.875rem;
-      right: 21.875rem;
-    }
     padding: {
       top: 6.25rem;
       bottom: 6.25rem;
@@ -110,82 +108,147 @@
       }
   }
 
- 
+    /*Seccion index-galeria*/
+
+.nuestraCasa {
+  text-align: center;
+  background-color: #e4ca98;
+  color: #130e05;
+  font-family: $font-deco;
+  margin-top: 70px;
+}
+.grid-item img {
+  height: 50vh;
+  width: 70%;
+  border-radius: 20%;
+}
+
+/*galeria*/
+.galeria {
+display: grid;
+grid-template-columns: 33% 33% 33%;
+gap: 10px;
+font-family: $font-deco;
+text-align: center;
+color: #000000;
+}
 
   /*Seccion nosotros*/
     
-   .nosotros img {
-     width: 31.25rem;
-     height: auto;
-     margin: 1.875rem;
-   }
    .pnosotros {
-     text-align: justify;
-     margin: 5rem;
-    h4 {
+     margin: 3rem;
+     .tituloSec{
       font: {
-        family: $font-secundaria;
+        size: 3.5rem;
+        family: $font-deco;
+      }
+      text-align: center;
+      padding-bottom: 3rem;
+     }
+     .text{
+      font: {
+        size: 1.1rem;
+        family: $font-text;
+      }
+      text-align: center;
+     }
+     .items{
+      font: {
+        size: 1.1rem;
+        family: $font-text;
+      }
+      text-align: center;
+     }
+     .tituloTer{
+      font: {
+        size: 1.8rem;
+        family: $font-deco;
+      }
+      text-align: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+     }
+    .deseos {
+      font: {
         size: 1.5625rem;
+        family: $font-deco;
       }
-        text-align: end;
-        padding-top: 6.25rem;
+        text-align: center;
+        padding-top: 3.25rem;
       }
-   }
-   .alturaC{
-     margin-top: 120px;
+    .time{
+      font: {
+        size: 1.2rem;
+        family: $font-principal;
+      }
+      text-align: center;
+    }
+    .elba{
+      font: {
+        size: 2.50rem;
+        family: $font-cursiva;
+      }
+      text-align: end;
+      padding-top: 3.25rem;
+    }
+
    }
    
    .tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
    @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
    
    .nuestraHistoria {
-     margin-bottom: 5rem;
+     margin-bottom: 1.5rem;
      text-align: center;
      font: {
-      size: 3.125rem;
+      size: 5.2rem;
       family: $font-secundaria
 
      }
    }
 
-   /*Seccion galeria*/
-
-.nuestraCasa {
-    text-align: center;
-    background-color: #e4ca98;
-    color: #130e05;
-    font-family: $font-secundaria;
-    margin-top: 70px;
+  /*Seccion info*/
+.sierra{
+  font: {
+    size: 3rem;
+    family: $font-deco;
   }
-.grid-item img {
-    height: 80%;
-    width: 70%;
-    border-radius: 20%;
-  }
-
-  /*galeria*/
-.galeria {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  gap: 10px;
-  font-family: $font-secundaria;
   text-align: center;
-  color: #e0b67d;
 }
-
+.info{
+  font-size: 1rem;
+  font-family: $font-text;
+  text-align: center;
+}
+.card{
+  background-color: #ece6db;
+  border: 0;
+  align-items: center;
+  .imagenCard{
+    width: 50%;
+    height: 50vh;
+    }
+}
+.lugar{
+  font-size: 2.5rem;
+  font-family: $font-principal;
+}
   /*Seccion ubicacion*/
 .boxUbicacion{
     text-align: center;
-    margin-top: 70px;
   }
 .ubicacion {
-  font: {
-    family: $font-secundaria;
-    size: 2.5rem;
+  h2{
+    font: {
+    family: $font-deco;
+    size: 3.5rem;
   }
     text-align: center;
-    background-color: #e4ca98;
+    background-color: #ece6db;
     grid-area: ubicacion
+
+  }
+  
   }
 .mapa{
     padding: 50px;
@@ -219,16 +282,14 @@
     align-items: center;
   }
   .formAlt{
-    margin-top: 100px;
+    margin-top: 1.875rem;
   }
-  
-  /* orden de las paginas html y responsive*/
+  .title{
+    font-family: $font-deco;
+    font-size: 3rem;
+    color: black;
+  }
 
-/*nosotros*/ 
-.gridNosotros {
-  display: grid;
-  grid-template-columns:40% 50% 50%;
-}
 
 /*recibe*/ 
 .fond {
@@ -246,7 +307,7 @@
     color: #050402;
         font: {
           size: 4.375rem;
-          family: $font-principal
+          family: $font-deco
         }
     padding-top: 150px;
   }
@@ -254,7 +315,7 @@
     color: #050402;
         font: {
           size: 2.375rem;
-          family: $font-principal
+          family: $font-deco
         }
     padding-top: 50px;
     padding-bottom: 50px;
@@ -266,7 +327,7 @@
     a {
         text-decoration: none;
         color: black;
-        font-family: $font-principal
+        font-family: $font-deco
       }
       &:hover {
         background-color: #b6a714;
@@ -310,7 +371,6 @@
   .box2{
     height: 130vh;
   }
-  /*GALERIA*/
   .galeria {
     display: flex;
     flex-direction: column;
@@ -324,6 +384,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    .tituloSec{
+      font-size: 2.5rem;
+      padding-bottom: 0.1rem;
+    }
   }
   .imgnosotros img{
     height: 400px;
@@ -345,9 +409,27 @@
       bottom: 50px;
     }
   }
-  .alturaC{
-    margin-top: 10px;
+  /*INFO*/
+  .infoP{
+    .lugar{
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .sierra{
+      font-size: 2.5rem;
+    }
+    .info{
+      font-size: 0.8rem;
+
+    }
   }
+  .card{
+    .imagenCard{
+      width: 100%;
+      height: 30vh;
+    }
+  }
+  
   /*UBICACION*/
   .ubicacion h2{
     font-size: 50px;
@@ -368,6 +450,17 @@
   /*CONTACTO*/
   .formAlt{
     margin-top: 10px;
+  }
+  .contacto{
+    .title{
+      font-size: 2rem;
+    }
+  }
+  /*RECIBE*/
+  .fond{
+    .consulta{
+      font-size: 2rem;
+    }
   }
 }
 @media only screen and (max-width: 1295px) {
